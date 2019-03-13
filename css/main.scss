@@ -1,24 +1,6 @@
-$colors: (
-  primary: #005dff,
-  primary-light: lighten(#005dff, 40%),
-  primary-dark: darken(#005dff, 40%),
-  accent: #fff6bb
-);
+@import "variables";
 
-$padding: 15px;
-$borders: 15px;
-
-@function color($color-name) {
-  @return map-get($colors, $color-name);
-}
-
-$desktop: 840px;
-
-@mixin desktop {
-  @media (min-width: #{$desktop}) {
-    @content;
-  }
-}
+@import "functions";
 
 body,
 html {
